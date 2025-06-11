@@ -1,0 +1,143 @@
+/* Contact Component Styling */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  margin-top: 85px;
+  padding-top: 10px;
+  background: #f8f1e5; /* Keep it light */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #9fdaec, #d9dedf);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 90%;
+}
+
+.contact-form h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-form span {
+  color: #ffcc00;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+  width: 100%; /* Ensures uniform width */
+  padding: 8px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+.contact-form textarea{
+  height: 55px;
+}
+
+.contact-form button {
+  width: 50%;
+  padding: 12px;
+  background: #ff5722;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #e64a19;
+}
+
+/* Blur background when popup is visible */
+.blur-background {
+  position: relative;
+}
+
+.blur-background::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  z-index: 999;
+}
+
+/* Blur background when popup is visible */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it stays above everything */
+}
+
+/* Popup Box */
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 300px;
+  width: 80%;
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 1001; /* Ensures it stays above blur overlay */
+}
+
+/* Popup message text */
+.popup p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Popup button */
+.popup button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.popup button:hover {
+  background: #0056b3;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

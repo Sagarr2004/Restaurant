@@ -1,0 +1,338 @@
+.sidebar {
+  margin-top: 70px;
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  position: fixed; /* Keep it fixed */
+  top: 0;
+  left: 0;
+  height: 100vh; 
+  overflow-y: auto; 
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    padding: 10px 0;
+    cursor: pointer;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.sidebar-menu li.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.sidebar-menu li:hover {
+    color: #007bff;
+}
+
+/* .main-content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 80px;
+    overflow-y: auto;
+} */
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 70px;
+  margin-left: 270px; /* Adjust according to sidebar width */
+  min-height: 100vh; /* Prevent content pushing */
+  overflow-y: auto;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 50px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-bottom: 15px;
+  color: #007bff;
+  font-size: 20px;
+}
+
+/* Flex container for title & button */
+.upper {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Moves button to the right */
+.upper button{
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: auto; /* Pushes button to the right */
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Address Styling */
+.section p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+  padding: 10px;
+  background: #fff;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        position: relative; /* Prevents overlap issues */
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .btn {
+        margin-left: 0; /* Centers button in smaller screens */
+        display: block;
+        width: 100%; /* Full-width button */
+        text-align: center;
+    }
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    display: flex !important; /* Ensure visibility */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    z-index: 9999 !important;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 150px; /* Reduce the modal size */
+    max-width: 50%;
+    text-align: center;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around; /* Centers buttons */
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.yes-button, .no-button {
+    flex: none;
+    width: 90px; /* Smaller button width */
+    padding: 6px 12px; /* Adjust padding */
+}
+
+
+.yes-button {
+    background-color: #d9534f;
+    color: white;
+}
+
+.no-button {
+    background-color: #5bc0de;
+    color: white;
+}
+
+
+.myOrders-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    /* margin-top: 80px; */
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .myOrders-header {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .summary-list {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .summary-item {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .summary-item:hover {
+    background: #e0e0e0;
+  }
+  
+  .summary-details {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .no-orders {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Popup Styles */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .order-items-list {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .order-item-row {
+    display: flex;
+    align-items: center;
+    background: none;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .order-item-row:last-child {
+    border-bottom: none;
+  }
+  
+  .order-item-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .close-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .close-btn:hover {
+    background: #cc0000;
+  }
+  
+
+
+@media screen and (max-width: 480px) {
+    .sidebar-menu li {
+        font-size: 0.9rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .modal-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .yes-button, .no-button {
+        max-width: 100%; /* Full-width buttons in smaller screens */
+    }
+}

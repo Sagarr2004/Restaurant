@@ -1,0 +1,159 @@
+/* .footer {
+  background-color: #fff;
+  color: black;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__section {
+  flex: 1;
+  padding: 0 20px;
+  min-width: 200px;
+}
+
+.footer__section h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #ff6f00;
+}
+
+.footer__section a {
+  display: block;
+  color: black;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer__section a:hover {
+  color: #ff6f00;
+}
+
+.footer__social-media a {
+  margin-right: 20px;
+}
+
+.footer__social-media a:hover {
+  color: black;
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer__bottom p {
+  margin-bottom: 10px;
+}
+
+.footer__links {
+  margin-top: 10px;
+}
+
+.footer__links a {
+  color: black;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.footer__links a:hover {
+  color: #ff6f00;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #444;
+} */
+
+
+/* Ensure body and html take full height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Full height for body and html */
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  
+  background-color: #fff;
+  color: black;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__section {
+  flex: 1;
+  padding: 0 20px;
+  min-width: 200px;
+}
+
+.footer__section h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #ff6f00;
+}
+
+.footer__section a {
+  display: block;
+  color: black;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer__section a:hover {
+  color: #ff6f00;
+}
+
+.footer__social-media a {
+  margin-right: 20px;
+}
+
+.footer__social-media a:hover {
+  color: black;
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer__bottom p {
+  margin-bottom: 10px;
+}
+
+.footer__links {
+  margin-top: 10px;
+}
+
+.footer__links a {
+  color: black;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.footer__links a:hover {
+  color: #ff6f00;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #444;
+}

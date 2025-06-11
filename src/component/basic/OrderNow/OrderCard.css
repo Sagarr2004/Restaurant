@@ -1,0 +1,132 @@
+.OrderNow {
+  margin-top: 90px;
+  display: grid;
+  place-items: center;
+  /* height: 70vh; */
+  background-color: #f5f5f5;
+}
+
+.checkout {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+
+.order-tag {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.saurabh {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.payment-method{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  grid-column: 1 / span 2;
+  grid-row: 5;
+}
+
+.phone{
+  grid-column: 1 / span 2 ; 
+
+  /* margin-left: 100px; */
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / span 2;
+  grid-row: 6;
+  margin-top: 10px;
+}
+
+.button button[type="submit"] {
+  width: 50%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.payment-method{
+  display: flex;
+  justify-content: center;
+}
+
+.method{
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-code {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  margin-top: 15px;
+}
+
+.qr-code h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.qr-code canvas {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .saurabh {
+    flex-wrap: wrap;
+  }
+  .form button {
+    grid-column: span 2;
+  }
+}

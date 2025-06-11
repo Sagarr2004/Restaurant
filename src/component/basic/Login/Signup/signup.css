@@ -1,0 +1,161 @@
+.signup {
+  /* margin-top: 15px; */
+  margin-top: 50px;
+  padding-top: 10px;
+  background: linear-gradient(to right, #9fdaec, #d9dedf);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #9fdaec, #d9dedf);
+}
+
+input#password,input#ConfirmPassword{
+  padding: 8px;
+}
+
+.signup-form {
+  width: 400px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #999;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.verification {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.verification h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.verification .form-group {
+  margin: 1rem 0;
+}
+
+.verification input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.verification button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.verification button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.form-group-button {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.form-submit {
+  /* margin-top: -15px; */
+  margin-bottom: 5px;
+  height: 45px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Login-form-submit{
+  margin-bottom: 5px;
+  height: 45px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 115px;
+}
+
+.Login-form-submit:hover{
+  background-color: #4ca5af;
+  border-radius: 10px;
+}
+
+.form-submit:hover {
+  background-color: #4ca5af;
+  border-radius: 10px;
+}
+
+.sign-image-link {
+  text-decoration: underline;
+  color: blue;
+  margin-top: px;
+  margin-left: 80px;
+  font-size: 15px;
+}
+
+.Login-image-link{
+  text-decoration: underline;
+  color: blue;
+  margin-top: px;
+  margin-left: 30px;
+  font-size: 15px;
+}
+.sign-image-link:hover {
+  font-size: medium;
+  color: black;
+}
+
+.signup-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-image img {
+  max-width: 100%;
+  height: 30pc;
+  padding-bottom: 100px;
+}
